@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: advisor_development
+test:
+  <<: *default
+  database: advisor_test
+
+production:
+  <<: *default
+  database: advisor_production
+  username: advisor
+  password: <%= ENV['ADVISOR_DATABASE_PASSWORD'] %>
