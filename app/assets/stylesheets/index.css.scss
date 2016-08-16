@@ -20,6 +20,33 @@
     }
   }
 
+  .btn {
+    background: #2c8fd1;
+    background-image: -webkit-linear-gradient(top, #2c8fd1, #3a73b0);
+    background-image: -moz-linear-gradient(top, #2c8fd1, #3a73b0);
+    background-image: -ms-linear-gradient(top, #2c8fd1, #3a73b0);
+    background-image: -o-linear-gradient(top, #2c8fd1, #3a73b0);
+    background-image: linear-gradient(to bottom, #2c8fd1, #3a73b0);
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    border-radius: 3px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 60px 10px 60px;
+    text-decoration: none;
+
+    &:hover {
+      background: #3cb0fd;
+      background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      text-decoration: none;
+    }
+  }
+
   .wrapper-third {
     background-color: #f3f3f3;
     width: 100%;
@@ -51,6 +78,13 @@
 
     .title-slide {
       text-align: center;
+    }
+
+    .btn {
+      margin: 50px auto 30px;
+      text-align: center;
+      display: block;
+      width: 60px;
     }
   }
 
@@ -322,33 +356,6 @@
       .right-side {
         float: right;
         width: 200px;
-
-        .btn {
-          background: #2c8fd1;
-          background-image: -webkit-linear-gradient(top, #2c8fd1, #3a73b0);
-          background-image: -moz-linear-gradient(top, #2c8fd1, #3a73b0);
-          background-image: -ms-linear-gradient(top, #2c8fd1, #3a73b0);
-          background-image: -o-linear-gradient(top, #2c8fd1, #3a73b0);
-          background-image: linear-gradient(to bottom, #2c8fd1, #3a73b0);
-          -webkit-border-radius: 3;
-          -moz-border-radius: 3;
-          border-radius: 3px;
-          font-family: Arial;
-          color: #ffffff;
-          font-size: 16px;
-          padding: 10px 60px 10px 60px;
-          text-decoration: none;
-
-          &:hover {
-            background: #3cb0fd;
-            background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-            text-decoration: none;
-          }
-        }
       }
     }
 
