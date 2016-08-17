@@ -114,7 +114,8 @@
     .license {
       width: 300px;
       margin: 0 auto;
-      background-color: #e6e6e6;
+      background-color: #ebebeb;
+      border-radius: 4px;
       padding: 5px;
       text-transform: uppercase;
 
@@ -196,6 +197,12 @@
       page-break-inside: avoid;
       break-inside: avoid-column;
 
+      @media (max-width: 690px) {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
       .btn {
         display: inline-block;
         text-align: center;
@@ -213,6 +220,10 @@
       column-count: 3;
       width: 100%;
       margin: 50px auto 10px;
+
+      @media (max-width: 690px) {
+        column-count: auto;
+      }
 
       ::-webkit-input-placeholder {
         color: #303030;
@@ -241,7 +252,8 @@
 
     .field {
       border: none;
-      background-color: #d6d6d6;
+      background-color: #ebebeb;
+      border-radius: 3px;
       padding: 17px 15px;
       width: 90%;
       display: inline-block;
@@ -291,6 +303,7 @@
   .inner-box {
     max-width: 950px;
     margin: 0 auto;
+    padding: 0 20px;
 
     .middle-box {
       margin: 0 auto;
@@ -381,7 +394,7 @@
         .left-side {
           float: left;
           height: 300px;
-          width: 500px;
+          max-width: 500px;
         }
 
         .right-side {
@@ -568,6 +581,49 @@
         .last-icon {
           margin-right: 0;
         }
+
+        @media (max-width: 989px) {
+          text-align: center;
+          margin: 0 auto;
+          width: 71%;
+
+          .icon-box {
+            width: 140px;
+          }
+        }
+
+        @media (max-width: 989px) {
+          width: 80%;
+        }
+
+        @media (max-width: 827px) {
+          width: 95%;
+        }
+
+        @media (max-width: 700px) {
+          .icon-box {
+            width: 200px;
+          }
+        }
+
+        @media (max-width: 500px) {
+          width: 88%;
+
+          .icon-box {
+            width: 140px;
+          }
+        }
+
+        @media (max-width: 390px) {
+          .icon-box {
+            width: 200px;
+            margin-right: 0;
+            float: none;
+            left: 11%;
+            padding-top: 10px;
+            position: relative;
+          }
+        }
       }
 
       .box-text {
@@ -578,6 +634,10 @@
       .left-side {
         float: left;
         width: 68%;
+
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
 
         h2 {
           text-transform: uppercase;
@@ -670,7 +730,7 @@
 
       .feature {
         float: left;
-        width: 450px;
+        max-width: 450px;
         min-height: 200px;
 
         .text-b {
@@ -688,6 +748,12 @@
             color: #909090;
             font-size: 18px;
           }
+
+          @media (max-width: 560px) {
+            width: 100%;
+            float: none;
+            margin-top: 40px;
+          }
         }
 
         .image-bg {
@@ -701,6 +767,11 @@
           top: 25px;
           height: 90px;
           margin-right: 33px;
+
+          @media (max-width: 560px) {
+            float: none;
+            margin: 0 auto 20px;
+          }
         }
 
         .image-best {
