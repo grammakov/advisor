@@ -59,16 +59,212 @@
     background-image: image_url('background/feature-bg.jpg');
     width: 100%;
     background-size: cover;
+
+    .industry-wrap {
+      column-count: 3;
+      text-align: center;
+
+      .box-industry {
+        float: left;
+        width: 300px;
+        height: 150px;
+        text-align: center;
+
+        p {
+          font-size: 22px;
+        }
+      }
+    }
   }
 
-  .advantage-wrapper {
+  .industry {
+    color: white;
+
+    h2 {
+      font-family: 'SegoeUiBold';
+      text-align: center;
+      padding-top: 50px;
+      font-size: 40px;
+    }
+  }
+
+  .subscribe-box {
+    text-align: center;
+
+    .btn {
+      margin: 70px auto 70px;
+      text-align: center;
+      display: block;
+      width: 70px;
+      padding: 20px 70px 20px 70px;
+    }
+
+    h2 {
+      font-family: 'SegoeUiBold';
+      text-align: center;
+      font-size: 40px;
+      padding-top: 20px;
+    }
+
+    .subscribe-t {
+      font-size: 22px;
+      color: #303030;
+    }
+
+    .license {
+      width: 300px;
+      margin: 0 auto;
+      background-color: #e6e6e6;
+      padding: 5px;
+      text-transform: uppercase;
+
+      .advisor, .price {
+        font-family: 'SegoeUiBold';
+      }
+
+      .advisor {
+        font-family: 'SegoeUiBold';
+        font-size: 20px;
+        font-style: normal;
+        top: -5px;
+        position: relative;
+      }
+
+      .price {
+        font-size: 50px;
+      }
+
+      .left-side {
+        float: left;
+        width: 100px;
+        text-align: center;
+        height: 50px;
+        display: block;
+
+        p {
+          margin-top: 11px;
+          color: #303030;
+          font-style: italic;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+
+      .right-side {
+        float: right;
+        width: 200px;
+        height: 70px;
+
+        .divide {
+          font-size: 29px;
+          margin-right: 17px;
+          position: relative;
+          top: -9px;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+
+  .test-drive {
+    background-color: #f3f3f3;
+    box-shadow: inset 0px 11px 8px -10px #CCC;
+    text-align: center;
+    padding: 1px 0px 100px;
+
     h1 {
       color: #0096e6;
       font-family: 'SegoeUiBold';
       text-align: center;
       margin-top: 50px;
-      font-size: 36px;
-      margin-bottom: 40px;
+      font-size: 40px;
+      margin-bottom: 9px;
+    }
+
+    h2 {
+      font-family: 'SegoeUiBold';
+      font-size: 30px;
+      margin-top: 0;
+      color: #303030;
+    }
+
+    .f-field {
+      margin: 0;
+      display: block;
+      text-align: left;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid-column;
+
+      .btn {
+        display: inline-block;
+        text-align: center;
+        width: 70px;
+        padding: 20px 70px 20px 70px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .form-drive {
+      text-align: center;
+      column-count: 3;
+      width: 100%;
+      margin: 50px auto 10px;
+
+      ::-webkit-input-placeholder {
+        color: #303030;
+        font-size: 18px;
+        font-family: 'SegoeUiBold';
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+        color: #303030;
+        font-size: 18px;
+        font-family: 'SegoeUiBold';
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+        color: #303030;
+        font-size: 18px;
+        font-family: 'SegoeUiBold';
+      }
+
+      :-ms-input-placeholder {
+        color: #303030;
+        font-size: 18px;
+        font-family: 'SegoeUiBold';
+      }
+    }
+
+    .field {
+      border: none;
+      background-color: #d6d6d6;
+      padding: 17px 15px;
+      width: 90%;
+      display: inline-block;
+      color: #303030;
+      font-size: 18px;
+      font-family: 'SegoeUiBold';
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .advantage-wrapper {
+    padding-bottom: 30px;
+
+    h1 {
+      color: #0096e6;
+      font-family: 'SegoeUiBold';
+      text-align: center;
+      margin-top: 70px;
+      font-size: 40px;
+      margin-bottom: 10px;
 
       span {
         color: #303030;
@@ -78,13 +274,17 @@
 
     .title-slide {
       text-align: center;
+      font-size: 22px;
+      color: #303030;
+      margin-top: 0;
     }
 
     .btn {
       margin: 50px auto 30px;
       text-align: center;
       display: block;
-      width: 60px;
+      width: 70px;
+      padding: 20px 70px 20px 70px;
     }
   }
 
@@ -109,6 +309,7 @@
           font-size: 75px;
           color: white;
           margin-bottom: 15px;
+          font-weight: lighter;
 
           span {
             font-family: 'SegoeUiBold';
@@ -132,6 +333,11 @@
       top: 12px;
       position: relative;
 
+      .divider {
+        color: white;
+        margin-right: 5px;
+      }
+
       ul {
         list-style-type: none;
         margin: 0;
@@ -146,6 +352,10 @@
             text-decoration: none;
             margin-right: 5px;
             color: white;
+
+            &:hover {
+              color: #dcdcdc;
+            }
           }
         }
       }
@@ -156,8 +366,8 @@
         color: #0096e6;
         font-family: 'SegoeUiBold';
         text-align: center;
-        margin-top: 70px;
-        font-size: 36px;
+        margin-top: 50px;
+        font-size: 40px;
 
         span {
           color: #303030;
@@ -166,7 +376,7 @@
       }
 
       .box-second {
-        margin-top: 50px;
+        margin-top: 30px;
 
         .left-side {
           float: left;
@@ -175,8 +385,9 @@
         }
 
         .right-side {
-          float: right;
-          width: 38%;
+          float: left;
+          width: 384px;
+          margin-left: 20px;
 
           p {
             font-size: 23px;
@@ -229,6 +440,22 @@
           }
         }
       }
+
+      .bottom-text {
+        margin-bottom: 50px;
+
+        h2 {
+          font-size: 22px;
+          color: #303030;
+          margin-bottom: 4px;
+        }
+
+        p {
+          margin-top: 5px;
+          color: #909090;
+          font-size: 18px;
+        }
+      }
     }
 
     .slide-third {
@@ -237,7 +464,7 @@
         font-family: 'SegoeUiBold';
         text-align: center;
         margin-top: 50px;
-        font-size: 36px;
+        font-size: 40px;
         margin-bottom: 40px;
 
         span {
@@ -250,20 +477,22 @@
         .icon-box {
           float: left;
           cursor: pointer;
-          width: 160px;
-          height: 200px;
+          width: 220px;
+          height: 260px;
           text-align: center;
-          margin-right: 100px;
+          margin-right: 23px;
 
           &:hover {
             background-color: white;
 
             p {
-              color: #00568c;
+              color: #3c648c;
             }
           }
 
           p {
+            color: #303030;
+            font-size: 24px;
             font-family: 'SegoeUiBold';
           }
 
@@ -277,14 +506,17 @@
 
             span {
               position: absolute;
-              background-color: #d4d4d4;
+              background-color: #e0e0e0;
               border-radius: 50%;
-              width: 15px;
-              height: 15px;
-              font-size: 10px;
+              width: 20px;
+              color: #303030;
+              height: 20px;
+              font-size: 14px;
               text-align: center;
               font-weight: bold;
-              right: 9px;
+              right: 3px;
+              top: -1px;
+              font-family: 'SegoeUiBold';
             }
           }
 
@@ -340,27 +572,43 @@
 
       .box-text {
         margin-top: 40px;
+        padding-bottom: 70px;
       }
 
       .left-side {
         float: left;
-        width: 60%;
+        width: 68%;
 
         h2 {
           text-transform: uppercase;
           font-family: 'SegoeUiBold';
+          font-size: 24px;
+          color: #303030;
+          margin-bottom: 0px;
+        }
+
+        p {
+          color: #909090;
           font-size: 18px;
+          margin-top: 6px;
         }
       }
 
       .right-side {
         float: right;
-        width: 200px;
+        width: 205px;
+        margin-top: 7%;
+
+        .btn {
+          padding: 20px 70px 20px 70px;
+          font-size: 19px;
+        }
       }
     }
 
     .slider {
       padding-top: 20px;
+      padding-bottom: 80px;
 
       .left-side {
         width: 40%;
@@ -371,10 +619,20 @@
       .right-side {
         float: right;
         color: white;
-        max-width: 344px;
+        max-width: 425px;
+
+        p {
+          font-size: 18px;
+        }
 
         h2 {
           font-family: 'SegoeUiBold';
+          font-size: 30px;
+        }
+
+        .manage {
+          font-size: 22px;
+          margin-bottom: 0;
         }
 
         .divider {
@@ -385,6 +643,9 @@
           list-style: none;
           margin-left: 30px;
           padding-left: 0;
+          margin-top: 6px;
+          font-size: 18px;
+          width: 90%;
 
           li {
             padding-left: 1em;
@@ -405,9 +666,12 @@
     }
 
     .features-wrap {
+      margin-top: 70px;
+
       .feature {
         float: left;
         width: 450px;
+        min-height: 200px;
 
         .text-b {
           float: left;
@@ -415,6 +679,14 @@
 
           .title {
             font-family: 'SegoeUiBold';
+            color: #303030;
+            font-size: 22px;
+            margin-bottom: 0;
+          }
+
+          .about {
+            color: #909090;
+            font-size: 18px;
           }
         }
 
@@ -426,7 +698,7 @@
           float: left;
           left: 16px;
           position: relative;
-          top: 5px;
+          top: 25px;
           height: 90px;
           margin-right: 33px;
         }
@@ -448,9 +720,9 @@
           background-repeat: no-repeat;
           width: 70px;
           float: left;
-          left: 16px;
+          left: 10px;
           position: relative;
-          top: 5px;
+          top: 10px;
         }
 
         .share {
@@ -459,9 +731,9 @@
           background-repeat: no-repeat;
           width: 70px;
           float: left;
-          left: 16px;
+          left: 6px;
           position: relative;
-          top: 5px;
+          top: 9px;
         }
 
         .trophy {
@@ -470,9 +742,9 @@
           background-repeat: no-repeat;
           width: 70px;
           float: left;
-          left: 16px;
+          left: 10px;
           position: relative;
-          top: 5px;
+          top: 14px;
         }
       }
     }
