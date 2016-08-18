@@ -3,6 +3,7 @@
     .gradient
       .inner-box
         .top-navigation
+          .long-logo
           ul
             li
               a href="#" Log in
@@ -28,6 +29,7 @@
       .box-second
         .left-side
           .image
+            .image-window
         .right-side
           p The first digital tool to offer standards-aligned best practice for leaders of K-12 schools
 
@@ -62,25 +64,25 @@
           span work?
 
         .icons-wrapper
-          .icon-box
+          .icon-box.active-box data-type='first-box'
             .i-bg
               span 1
               .search-i
             p Enter or pick <br/> a query
 
-          .icon-box
+          .icon-box data-type='second-box'
             .i-bg
               span 2
               .result-i
             p Get the results
 
-          .icon-box
+          .icon-box data-type='third-box'
             .i-bg
               span 3
               .interact-i
             p Interact
 
-          .icon-box.last-icon
+          .icon-box.last-icon data-type='last-box'
             .i-bg
               span 4
               .implement-i
@@ -90,8 +92,19 @@
 
         .box-text
           .left-side
-            h2 Enter or pick a query
-            p Extrin aroma hops top-fermenting yeast bunghole microbrewery, copper. all-malt: final gravity scotch ale; imperial. dunkle, degrees plato biere de garde dextrin priming length.” pitch kolsch abv terminal gravity priming hand pump autolysis. Aau malt extract.
+            .first-box
+              h2 Enter or pick a query
+              p Extrin aroma hops top-fermenting yeast bunghole microbrewery, copper. all-malt: final gravity scotch ale; imperial. dunkle, degrees plato biere de garde dextrin priming length.” pitch kolsch abv terminal gravity priming hand pump autolysis. Aau malt extract.
+            .second-box
+              h2 Lorem
+              p Lorem Text 2
+            .third-box
+              h2 Lorem
+              p Lorem Text 3
+            .last-box
+              h2 Lorem
+              p Lorem Text Last
+
           .right-side
             a.btn href="#" Sign up
 
@@ -104,8 +117,9 @@
           .slider
             .left-side
               .slider-i
+                .browsers-i
             .right-side
-              p Personal Advisor comes along with Unique Tool
+              p Principal's Advisor comes along with Unique Tool
               h2 The Implementation, Tracking and Evaluation Model (ITEM)
               .divider
               p.manage Manage and assess the application of best practice in your school
@@ -167,10 +181,10 @@
               .company-1
               p ETIN-SIIA innovation incubator <br/> Semi-finalist
             .box-industry
-              .company-1
+              .company-2
               p ETIN-SIIA innovation incubator <br/> Semi-finalist
             .box-industry
-              .company-1
+              .company-3
               p ETIN-SIIA innovation incubator <br/> Semi-finalist
           .clearfix
 
@@ -197,8 +211,8 @@
       h2 Start your 30 day free trial now
       .form-drive
         .f-field
-          =text_field_tag :email_drive, nil, class: 'field', placeholder: 'E-mail:'
+          =text_field_tag :email_drive, nil, class: 'field', placeholder: 'E-mail'
         .f-field
-          = password_field :password_drive, nil, class: 'field', placeholder: 'Password:'
+          = password_field :password_drive, nil, class: 'field', placeholder: 'Password'
         .f-field
           a.btn href="#" Sign up

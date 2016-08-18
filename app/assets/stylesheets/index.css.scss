@@ -1,6 +1,6 @@
 .main-wrapper {
   background-image: image_url('background/index-bg.jpg');
-  height: 90vh;
+  height: 100vh;
   min-height: 718px;
   width: 100%;
   background-size: cover;
@@ -67,11 +67,35 @@
       .box-industry {
         float: left;
         width: 300px;
-        height: 150px;
+        height: 330px;
         text-align: center;
 
         p {
           font-size: 22px;
+        }
+
+        .company-1 {
+          background-image: image_url('index/award_1.png');
+          width: 240px;
+          height: 130px;
+          background-repeat: no-repeat;
+          margin: 0 auto;
+        }
+
+        .company-2 {
+          background-image: image_url('index/award_2.png');
+          width: 240px;
+          height: 130px;
+          margin: 0 auto;
+          background-repeat: no-repeat;
+        }
+
+        .company-3 {
+          background-image: image_url('index/award_3.png');
+          width: 240px;
+          height: 130px;
+          margin: 0 auto;
+          background-repeat: no-repeat;
         }
       }
     }
@@ -85,6 +109,7 @@
       text-align: center;
       padding-top: 50px;
       font-size: 40px;
+      padding-bottom: 30px;
     }
   }
 
@@ -96,7 +121,8 @@
       text-align: center;
       display: block;
       width: 70px;
-      padding: 20px 70px 20px 70px;
+      font-family: 'SegoeUiBold';
+      padding: 18px 70px 19px 70px;
     }
 
     h2 {
@@ -223,7 +249,8 @@
         display: inline-block;
         text-align: center;
         width: 70px;
-        padding: 20px 70px 20px 70px;
+        font-family: 'SegoeUiBold';
+        padding: 18px 70px 19px 70px;
 
         &:focus {
           outline: none;
@@ -313,7 +340,8 @@
       text-align: center;
       display: block;
       width: 70px;
-      padding: 20px 70px 20px 70px;
+      font-family: 'SegoeUiBold';
+      padding: 18px 70px 19px 70px;
     }
   }
 
@@ -322,11 +350,35 @@
     margin: 0 auto;
     padding: 0 20px;
 
+    .long-logo {
+      background-image: image_url('icons/svg/logo-long.svg');
+      height: 53px;
+      background-repeat: no-repeat;
+      width: 158px;
+      background-size: 81%;
+      top: -12px;
+      position: absolute;
+      background-color: #48435d;
+      left: 0;
+      background-position-y: 9px;
+      background-position-x: 15px;
+    }
+
     .middle-box {
       margin: 0 auto;
       padding-top: 14%;
       max-width: 630px;
       text-align: center;
+
+      .logo {
+        background-image: image_url('icons/svg/logo.svg');
+        height: 80px;
+        background-repeat: no-repeat;
+        width: 120px;
+        margin: 0 auto;
+        top: 12px;
+        position: relative;
+      }
 
       .line {
         border-top: 1px solid white;
@@ -336,6 +388,7 @@
 
       .box-text {
         h1 {
+          margin-top: 10px;
           font-size: 75px;
           color: white;
           margin-bottom: 15px;
@@ -410,8 +463,27 @@
 
         .left-side {
           float: left;
-          height: 300px;
+          height: 400px;
           max-width: 500px;
+
+          .image {
+            background-image: image_url('index/browser.png');
+            height: 378px;
+            width: 460px;
+            background-repeat: no-repeat;
+            position: relative;
+            margin-right: 20px;
+          }
+
+          .image-window {
+            background-image: image_url('index/inner-image.png');
+            height: 244px;
+            width: 434px;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 13px;
+            top: 22px;
+          }
         }
 
         .right-side {
@@ -433,7 +505,7 @@
             }
 
             .image {
-              background-image: image_url('icons/plus.png');
+              background-image: image_url('icons/svg/plus.svg');
               height: 32px;
               width: 32px;
               background-repeat: no-repeat;
@@ -443,7 +515,7 @@
             }
 
             .minus {
-              background-image: image_url('icons/minus.png');
+              background-image: image_url('icons/svg/minus.svg');
             }
 
             a {
@@ -504,6 +576,10 @@
       }
 
       .icons-wrapper {
+        .active-box {
+          background-color: white;
+        }
+
         .icon-box {
           float: left;
           cursor: pointer;
@@ -640,7 +716,6 @@
             width: 200px;
             margin-right: 0;
             float: none;
-            //left: 11%;
             padding-top: 10px;
             position: relative;
           }
@@ -649,6 +724,7 @@
 
       .box-text {
         margin-top: 40px;
+        min-height: 185px;
         padding-bottom: 70px;
       }
 
@@ -681,20 +757,40 @@
         margin-top: 7%;
 
         .btn {
-          padding: 20px 70px 20px 70px;
-          font-size: 19px;
+          font-family: 'SegoeUiBold';
+          padding: 18px 70px 19px 70px;
         }
       }
     }
 
     .slider {
-      padding-top: 20px;
+      padding-top: 80px;
       padding-bottom: 80px;
 
       .left-side {
         width: 40%;
         float: left;
         height: 300px;
+
+        .slider-i {
+          background-image: image_url('index/browsers.png');
+          height: 544px;
+          background-repeat: no-repeat;
+          width: 496px;
+          left: 0;
+          position: relative;
+          top: 15px;
+        }
+
+        .browsers-i {
+          background-image: image_url('index/browsers-i.jpg');
+          height: 469px;
+          background-repeat: no-repeat;
+          width: 360px;
+          left: 68px;
+          position: relative;
+          top: 28px;
+        }
       }
 
       .right-side {
