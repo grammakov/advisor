@@ -64,9 +64,13 @@
       column-count: 3;
       text-align: center;
 
+      @media (max-width: 885px) {
+        column-count: auto;
+      }
+
       .box-industry {
-        float: left;
         width: 300px;
+        margin: 0 auto;
         height: 330px;
         text-align: center;
 
@@ -370,6 +374,10 @@
       max-width: 630px;
       text-align: center;
 
+      @media (max-width: 620px) {
+        padding-top: 40%;
+      }
+
       .logo {
         background-image: image_url('icons/svg/logo.svg');
         height: 80px;
@@ -484,6 +492,10 @@
             left: 13px;
             top: 22px;
           }
+
+          @media (max-width: 494px) {
+            display: none;
+          }
         }
 
         .right-side {
@@ -539,6 +551,19 @@
             .hide {
               margin-left: 54px;
             }
+          }
+        }
+
+        @media (max-width: 923px) {
+          .left-side {
+            float: none;
+            margin: 50px auto;
+          }
+
+          .right-side {
+            float: none;
+            width: 100%;
+            max-width: 100%;
           }
         }
       }
@@ -760,6 +785,13 @@
           font-family: 'SegoeUiBold';
           padding: 18px 70px 19px 70px;
         }
+
+        @media (max-width: 500px) {
+          float: none;
+          margin: 0 auto;
+          clear: both;
+          padding-top: 40px;
+        }
       }
     }
 
@@ -838,6 +870,17 @@
               display: block;
             }
           }
+        }
+      }
+
+      @media (max-width: 950px) {
+        .left-side {
+          display: none;
+        }
+
+        .right-side {
+          width: 100%;
+          max-width: 100%;
         }
       }
     }
